@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sneha-Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; background: #f8f9fa; color: #2d3436; background-image: url(firstbg.jpg); background-size: cover; background-attachment: fixed; }
+
+    /* Attractive Header */
+    nav { 
+      position: sticky; top: 0; z-index: 1000;
+      display: flex; justify-content: space-between; align-items: center; 
+      padding: 0 50px; height: 80px;
+      background: linear-gradient(90deg, #3d3db9, #6a1b9a);
+      color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    nav .left { font-size: 1.8rem; font-weight: 700; letter-spacing: 1px; }
+    nav ul { display: flex; gap: 25px; }
+    nav ul li { list-style: none; }
+    nav ul a { text-decoration: none; color: white; font-weight: 500; transition: 0.3s; }
+    nav ul a:hover { color: #ffeb3b; font-size: 1.1rem; }
+
+    /* Hero */
+    .first { display: flex; justify-content: space-around; margin: 120px 0; flex-wrap: wrap; align-items: center; text-align: center; }
+    .leftSection { font-size: 2.5rem;color: rgb(210, 167, 110); max-width: 500px; margin: 30px 50px; font-weight: 600; }
+    .leftSection span { background: linear-gradient(90deg, #6a1b9a, #ff6f00); -webkit-background-clip: text; color: transparent; font-weight: 700; }
+    .leftSection .typing { font-size: 1.8rem; color: #ff6f00; font-weight: 600; }
+    .rightSection img { width: 280px; height: 280px; object-fit: cover; border-radius: 50%; border: 5px solid white; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+
+    section { padding: 80px 60px; text-align: center; }
+    section h1 { font-size: 2.2rem; margin-bottom: 20px; background: linear-gradient(90deg, #3d3db9, #ff6f00); -webkit-background-clip: text; color: transparent; }
+    section p { max-width: 700px; margin: auto; line-height: 1.6; font-size: 1.1rem; color: #444; }
+
+    /* About */
+    .about { background-color: rgba(255,255,255,0.8); border-radius: 12px; padding: 50px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+    /* Projects */
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .project-card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: left; transition: transform 0.3s; }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card h3 { margin-bottom: 10px; color: #333; }
+    .project-card p { margin-bottom: 15px; color: #555; }
+    .project-card a { text-decoration: none; color: #6a1b9a; font-weight: 600; margin-right: 10px; }
+    .project-card a:hover { color: #ff6f00; }
+
+    /* Contact */
+    .contact { background: rgba(0,0,0,0.7); color: white; border-radius: 12px; padding: 40px; }
+    .contact form { display: flex; flex-direction: column; gap: 15px; max-width: 400px; margin: auto; }
+    .contact input, .contact textarea { padding: 10px; border: none; border-radius: 8px; }
+    .contact button { padding: 12px; border: none; background: #6a1b9a; color: white; border-radius: 8px; cursor: pointer; }
+    .contact button:hover { background: #ff6f00; }
+
+    /* Social Icons */
+    .social-icons { position: fixed; top: 50%; left: 20px; transform: translateY(-50%); display: flex; flex-direction: column; gap: 20px; }
+    .social-icons a { color: #fff; font-size: 24px; background: #6a1b9a; padding: 10px; border-radius: 50%; text-align: center; transition: 0.3s; }
+    .social-icons a:hover { background: #ff6f00; transform: scale(1.2); }
+
+    /* Footer */
+    footer { background: linear-gradient(90deg, #3d3db9, #6a1b9a); color: white; padding: 20px; text-align: center; }
+    footer .footer-links a { color: #fff; margin: 0 10px; text-decoration: none; transition: 0.3s; }
+    footer .footer-links a:hover { color: #ffeb3b; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="left"> Sneha's Portfolio</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Social Icons -->
+  <div class="social-icons">
+    <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:yourmail@example.com"><i class="fas fa-envelope"></i></a>
+  </div>
+
+  <!-- Hero -->
+  <main id="home">
+    <section class="first">
+      <div class="leftSection">
+        <b>Hi, I am <span>Sneha Gogawale</span></b>
+        <div class="typing"></div>
+      </div>
+      <div class="rightSection">
+        <img src="snehag.jpg" alt="Sneha's Photo">
+      </div>
+    </section>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h1>About Me</h1>
+    <p>I am <b>Sneha Gogawale</b>, a passionate <span>Web Developer</span> who loves building responsive and interactive websites. I specialize in <b>HTML, CSS, JavaScript</b>, and I’m currently learning <b>MERN stack</b>. I enjoy solving problems, designing UI, and exploring new technologies.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h1>Projects</h1>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Text Summarization tool </h3>
+        <p>A project developed for summarizing text.</p>
+        <a href="https://github.com/SnehaGogawale/Summarizationtool">🔗 GitHub</a>
+        <a href="#">🌐 Live Demo</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>This personal portfolio site built using HTML, CSS, and JavaScript.</p>
+        <a href="#">🔗 GitHub</a>
+        <a href="#">🌐 Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+    <!-- Experience -->
+  <section id="experience">
+    <h1>Experience</h1>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Internship </h3>
+        <p><b>Company:</b> Nesecure Pvt. Ltd.</p>
+        <p>Worked on developing responsive websites, optimizing performance, and integrating front-end designs with backend APIs.</p>
+        <p><b>Duration:</b> June 2024 - Aug 2024</p>
+      </div>
+     
+    
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h1>Contact Me</h1>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sneha Gogawale | All Rights Reserved</p>
+    <div class="footer-links">
+      <a href="https://github.com/SnehaGogawale" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/sneha-gogawale-871745253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a> |
+      <a href="mailto:snehagogawale45@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <!-- Typed.js Script -->
+  <script>
+    var typed = new Typed('.typing', {
+      strings: ["💻 Web Developer", "✨ Problem Solver", "🚀 Tech Enthusiast", "🎨 UI Designer"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+</body>
+</html>
